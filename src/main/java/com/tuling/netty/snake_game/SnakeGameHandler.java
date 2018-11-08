@@ -62,6 +62,10 @@ public class SnakeGameHandler extends
             }
         } else if (cmd.equals("RESURGENCE")) { // 复活角色
             gameEngine.doResurgence(incoming.id().asShortText());
+        } else if(cmd.equals("MSG")){
+            for (Channel channel : channels) {
+                channel.writeAndFlush(new TextWebSocketFrame("msg\r\n"+cmdData));
+            }
         }
     }
 
