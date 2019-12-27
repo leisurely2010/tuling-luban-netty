@@ -196,7 +196,7 @@
 
 
         <!-- elasticsearch -->
-        <!-- https://mvnrepository.com/artifact/fr.pilato.spring/spring-elasticsearch -->
+        <!-- https://mvnrepository.com/artifact/fr.pilato.spring/spring-elasticsearchd -->
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
